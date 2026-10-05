@@ -1,0 +1,13 @@
+api = ChallongeApi()
+
+# Get all open matches
+api.matches.get_all(tournament_id="my-tournament", state="open")
+
+# Mark a match as underway (locks it from !newmatch picking it again)
+api.matches.set_underway(tournament_id, match_id)
+
+# Submit scores and a winner
+api.matches.update(tournament_id, match_id, match_scores_csv="3-1", match_winner_id=challonge_participant_id)
+
+# Get all participants (useful for the Discord ↔ Challonge mapping step)
+api.participants.get_all(tournament_id)

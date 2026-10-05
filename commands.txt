@@ -1,0 +1,21 @@
+!setuptournament [challonge_id] [stadium_amount] [battlestart_time]
+!endtournament
+!confirmend
+!status
+
+!newmatch
+!matchstart [match_number]
+!matchend [match_number] [p1_score] [p2_score]
+
+!addjudge @user
+!removejudge @user
+!judges
+
+!addcontestant @user
+!removecontestant @user
+!contestants
+
+!setarenas [amount]
+!settimer [minutes]
+
+!debug
